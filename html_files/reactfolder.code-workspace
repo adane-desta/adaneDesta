@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "../../../reactfolder"
+		},
+		{
+			"path": "../.."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "animal_advisory_system"
+	}
+}

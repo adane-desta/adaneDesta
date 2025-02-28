@@ -1,0 +1,132 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+    overflow-x: hidden;
+}
+.header {
+    background-color: #083d77;
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+    max-width: 100%;
+}
+
+.header h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.header p {
+    font-size: 1.2rem;
+    margin-top: 20px;
+}
+.news-section {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.news-item {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.news-item h2 {
+    font-size: 18px;
+    color: #083d77;
+    margin-bottom: 10px;
+}
+
+.news-item p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.news-item .news-date {
+    font-size: 14px;
+    color: #999;
+}
+
+.news-item .news-badge {
+    display: inline-block;
+    background-color: #083d77;
+    color: white;
+    padding: 5px 10px;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.news-item.with-image {
+    display: flex;
+    gap: 20px;
+}
+
+.news-item.with-image img {
+    max-width: 40%;
+    max-height: 300px;
+    border-radius: 8px;
+    background-position: center center;
+    object-fit: cover;
+}
+
+.news-item.with-image .news-content {
+    flex: 1;
+}
+/* Footer Section */
+.footer {
+    text-align: center;
+    background-color: #007bff;
+    color: white;
+    padding: 1rem 0;
+    margin-top: 2rem;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 40px;
+  }
+  .footer .footerparent{
+    height: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+  }
+  .footer .links {
+      display: flex;
+      flex-direction: column;
+
+  }
+  .footer a{
+    padding: 10px;
+    color: #dad1d1;
+    text-decoration: none;
+    transition: 0.4s ease-in-out;
+  }
+  .footer a:hover{
+    color: white;
+    scale: 1.1;
+
+  }
+
+/* Add responsiveness */
+@media (max-width: 600px) {
+    .news-item.with-image {
+        flex-direction: column;
+    }
+
+    .news-item.with-image img {
+        max-width: 100%;
+    }
+}

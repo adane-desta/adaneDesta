@@ -1,0 +1,160 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: url('https://source.unsplash.com/1600x900/?farm,animals') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+}
+
+.login-container {
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 15px;
+    padding: 40px;
+    width: 90%;
+    max-width: 400px;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+.login-container h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #FFD700;
+}
+
+.login-container p {
+    font-size: 1rem;
+    margin-bottom: 30px;
+}
+
+.login-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.login-container input[type="email"],
+.login-container input[type="password"] {
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+.login-container button {
+    padding: 12px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    margin-bottom: 5%;
+    background: #4CAF50;
+    color: #ffffff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+.login-container button:hover {
+    background: #388E3C;
+}
+
+/* Disable the login button and change cursor when not selected */
+.login-container button[disabled] {
+    background: #9E9E9E;
+    cursor: not-allowed;
+}
+
+.login-container .user-type {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.login-container .user-type label {
+    padding: 10px 15px;
+    border-radius: 30px;
+    background: #d8900a; 
+    margin-bottom: 5%;
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+.login-container .user-type label:hover {
+    background: #6B3F2A; /* Darker brown for hover effect */
+}
+
+.login-container .user-type input[type="radio"] {
+    display: none;
+}
+
+.login-container .user-type input[type="radio"] + label {
+    position: relative;
+    padding-left: 35px;
+}
+
+.login-container .user-type input[type="radio"] + label::before {
+    content: '';
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    border: 2px solid #d8900a;
+    border-radius: 50%;
+    background-color: transparent;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.login-container .user-type input[type="radio"]:checked + label::before {
+    background-color: #d8900a;
+    border-color: #d8900a;
+}
+
+.language-selector {
+    margin-bottom: 20px;
+}
+
+.language-selector select {
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    background-color: #d8900a;
+    color: white;
+    border: none;
+}
+
+.language-selector select:hover {
+  
+    background-color: #83590c;
+   
+}
+
+.login-container .signup-link {
+    margin-top: 20px;
+    font-size: 0.9rem;
+}
+
+.login-container .signup-link a {
+    color: #FFD700;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.login-container .signup-link a:hover {
+    text-decoration: underline;
+}

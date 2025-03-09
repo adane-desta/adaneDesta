@@ -94,9 +94,9 @@ loginButton.addEventListener('click', async () => {
 
                 if (userType === 'farmers') {
                           
-                    window.location.href = '/html_files/homePage.html';
+                    window.location.href = '/html-files/homePage.html';
                 } else {
-                    window.location.href = '/html_files/vetpage.html';
+                    window.location.href = '/html-files/vetpage.html';
                 }
             } else {
                 alert('Email or password is not correct');

@@ -1,6 +1,6 @@
 import { StrictMode, useEffect, useState } from "react";
 import { createRoot } from "react-dom/client";
-import '/stylesheet_files/headerstyle.css';
+import '../stylesheet_files/headerstyle.css';
 
 const translations = {
     en: {
@@ -65,12 +65,12 @@ function Header() {
                 </select>
             </div>
             <ul>
-                <li><a id="mine" href="/html-files/homePage.html">{home}</a></li>
-                <li><a id="ninkeDafira" href="/html-files/aboutPage.html">{about}</a></li>
-                <li><a id="odoo" href="/html-files/news_and_event.html">{news}</a></li>
-                <li><a id="bue" href="/html-files/resources.html">{resources}</a></li>
-                <li><a id="sejo" href="/html-files/consult_vet.html">{consultVet}</a></li>
-                <li><a id="miloma" href="/html-files/join-us.html">{joinUs}</a></li>
+                <li><a id="mine" href="../html-files/homePage.html">{home}</a></li>
+                <li><a id="ninkeDafira" href="../html-files/aboutPage.html">{about}</a></li>
+                <li><a id="odoo" href="../html-files/news_and_event.html">{news}</a></li>
+                <li><a id="bue" href="../html-files/resources.html">{resources}</a></li>
+                <li><a id="sejo" href="../html-files/consult_vet.html">{consultVet}</a></li>
+                <li><a id="miloma" href="../html-files/join-us.html">{joinUs}</a></li>
                 
             </ul>
         </nav>

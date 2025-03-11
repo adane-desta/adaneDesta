@@ -1,7 +1,7 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 
-import '/stylesheet_files/footerstyle.css'
+import '../stylesheet_files/footerstyle.css'
 
 
 function Footer(){
@@ -12,13 +12,13 @@ function Footer(){
             <div className="footerparent">
                 <div className="links">
                     <h4>Quick links</h4>
-                     <a href="homepage.html">home</a>
-                     <a href="aboutPage.html">About</a>
-                     <a href="resources.html">Resources</a>
-                     <a href="consult_vet.html">Consult veternerian</a>
-                     <a href="news_and_event.html">news and events</a>
-                     <a href="join-us.html">Join Us</a>
-                     <a href="">Chatbot</a>
+                     <a href="../html-files/homepage.html">home</a>
+                     <a href="../html-files/aboutPage.html">About</a>
+                     <a href="../html-files/resources.html">Resources</a>
+                     <a href="../html-files/consult_vet.html">Consult veternerian</a>
+                     <a href="../html-files/news_and_event.html">news and events</a>
+                     <a href="../html-files/join-us.html">Join Us</a>
+                     
                 </div>
                
     

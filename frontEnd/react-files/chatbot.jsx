@@ -4,7 +4,7 @@ import React, { useState, useEffect , useRef } from "react";
 import ClipLoader from "react-spinners/ClipLoader";
 import axios from "axios";
 
-import '/stylesheet_files/chatbotstyle.css';
+import '../stylesheet_files/chatbotstyle.css';
 
 const translations = {
 

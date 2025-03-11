@@ -3,7 +3,7 @@
 import React, { useEffect, useState } from 'react';
 import NewsItem from './newsItem';
 import { createRoot } from 'react-dom/client';
-import '/stylesheet_files/NewsPage.css';
+import '../stylesheet_files/NewsPage.css';
 
   const NewsPage = () => {
   const [newsItems, setNewsItems] = useState([]);

@@ -3,7 +3,7 @@
 import React, { useEffect, useState } from 'react';
 import ResourceItem from './resourceItem';
 import { createRoot } from 'react-dom/client';
-import '/stylesheet_files/resourcePage.css';
+import '../stylesheet_files/resourcePage.css';
 
   const NesourcePage = () => {
   const [resourceItems, setResourceItems] = useState([]);

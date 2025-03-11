@@ -3,7 +3,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import '/stylesheet_files/resourcePage.css';
+import '../stylesheet_files/resourcePage.css';
 
 
 const ResourceItem = ({ image, alt, badge, title, description, date , actual_resourse_url}) => {

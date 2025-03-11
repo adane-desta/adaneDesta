@@ -101,7 +101,7 @@ doctorForm.addEventListener('submit', async (event) => {
 
        if (response.ok) {
         alert("You have signed up successfully");
-        window.location.href = '/html_files/vetpage.html';
+        window.location.href = '../html_files/loginPage.html';
        } else {
         alert("Sorry, something went wrong");
       }  

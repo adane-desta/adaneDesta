@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import '/stylesheet_files/NewsPage.css';
+import '../stylesheet_files/NewsPage.css';
 
 const NewsItem = ({ image, alt, badge, title, description, date }) => {
   return (

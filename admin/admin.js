@@ -55,7 +55,7 @@
             }
         ];
 
-        const response = await fetch('http://localhost:5700/api/'+activeSection, {
+        const response = await fetch('https://ethio-animal-health.onrender.com/api/'+activeSection, {
             method: 'POST',
             body: JSON.stringify({
                 newsEvent: { title, type, description, date: new Date().toISOString(), image_url: `dbResources/images/${image.files[0].name}` , actual_resource_url: `/${'dbResources/'+activeSection}/${actualResource.files[0].name}` },
@@ -127,7 +127,7 @@ usersNav.addEventListener('click' , () => {
 
  const getUsers = async (userType , selected) => {
 
-     const response = await fetch(`http://localhost:5700/api/users/${userType}`);
+     const response = await fetch(`https://ethio-animal-health.onrender.com/api/users/${userType}`);
 
      const users = await response.json();
      contentArea.innerHTML = `
@@ -175,7 +175,7 @@ usersNav.addEventListener('click' , () => {
 const deleteUser = async (user_id , type) => {
     
     try{
-       const response = await fetch(`http://localhost:5700/api/deleteUser/${user_id}?userType=${type}` , {
+       const response = await fetch(`https://ethio-animal-health.onrender.com/api/deleteUser/${user_id}?userType=${type}` , {
        method: 'DELETE'
        });
 
@@ -205,7 +205,7 @@ questionsNav.addEventListener('click', () => {
 const getUserQuestion =  async () => {
 
    
-    const response = await fetch('http://localhost:5700/api/getUserQuestion')
+    const response = await fetch('https://ethio-animal-health.onrender.com/api/getUserQuestion')
     const userQuestions = await response.json();
     contentArea.innerHTML = `
         <div class="section-title">Manage Questions</div>
@@ -243,7 +243,7 @@ const getUserQuestion =  async () => {
 const deleteUserQuestion = async (question_id) => {
    
     try {
-        const response = await fetch(`http://localhost:5700/api/deleteUserQuestion/${question_id}`, {
+        const response = await fetch(`https://ethio-animal-health.onrender.com/api/deleteUserQuestion/${question_id}`, {
             method: 'DELETE'
         });
 
@@ -264,7 +264,7 @@ const deleteUserQuestion = async (question_id) => {
 
 const getNewsEventsAndResources = async () => {
    
-    const response = await fetch('http://localhost:5700/api/'+activeSection+'?language_code=en');
+    const response = await fetch('https://ethio-animal-health.onrender.com/api/'+activeSection+'?language_code=en');
     const news = await response.json();
 
     contentArea.innerHTML = `
@@ -301,7 +301,7 @@ const getNewsEventsAndResources = async () => {
 const deleteNewsEventAndResource = async (id) => {
    
     try {
-        const response = await fetch(`http://localhost:5700/api/${activeSection}/${id}`, {
+        const response = await fetch(`https://ethio-animal-health.onrender.com/api/${activeSection}/${id}`, {
             method: 'DELETE'
         });
 
@@ -342,7 +342,7 @@ resourcesNav.addEventListener('click', () => {
 
 const getAppointment = async () =>{
 
-    const response = await fetch('http://localhost:5700/api/getAppointment');
+    const response = await fetch('https://ethio-animal-health.onrender.com/api/getAppointment');
     const appointments = await response.json();
     
     contentArea.innerHTML = `
@@ -380,7 +380,7 @@ const getAppointment = async () =>{
 
  const deleteAppointment = async (appointment_id) => {
     try {
-        const response = await fetch(`http://localhost:5700/api/delete_appointment/${appointment_id}`, {
+        const response = await fetch(`https://ethio-animal-health.onrender.com/api/delete_appointment/${appointment_id}`, {
              method: 'DELETE'
         });
 

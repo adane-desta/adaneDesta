@@ -76,7 +76,7 @@ loginButton.addEventListener('click', async () => {
     const userType = document.querySelector('input[name="user-type"]:checked').value;
     
     try {
-        const response = await fetch(`http://localhost:5700/api/login?email=${email}&password=${password}&userType=${userType}`);
+        const response = await fetch(`https://ethio-animal-health.onrender.com/api/login?email=${email}&password=${password}&userType=${userType}`);
 
         if (!response.ok) {
             const errorData = await response.json();

@@ -25,7 +25,3 @@ backend/.env
 *.njsproj
 *.sln
 *.sw?
-
-# Ignore build folders
-dist/
-build/

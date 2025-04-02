@@ -8,6 +8,15 @@ export default defineConfig({
   server: {
     cors: true,
     host: '0.0.0.0',
+  },
+  build: {
+    outDir: 'dist',
+  },
+  resolve: {
+    fallback: {
+      default: 'index.html' // Ensures routing fallback
+    }
   }
+
 })
 

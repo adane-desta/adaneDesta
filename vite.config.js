@@ -11,10 +11,7 @@ export default defineConfig({
   },
 
   build: {
-    outDir: 'dist' // Ensures the build files are output to the 'dist' folder
+    outDir: 'dist' 
   }
 })
 
-
-// npm install -g serve
-// serve -s dist

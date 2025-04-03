@@ -32,10 +32,25 @@ const UserQuestionModel = {
     }, 
     getUserQuestion: async () => {
         
-            const [userQuestionData] = await db.query(
+      const connection = await db.getConnection();
+      await connection.beginTransaction();
+
+      try{
+
+        const [userQuestionData] = await connection.query(
             `SELECT question_id, name , emailorphone , question_text ,  address FROM userquestions`);
              
             return userQuestionData;
+
+      }catch (error){
+
+       await connection.rollback();
+       throw error;
+
+      } finally {
+        connection.release();
+    }
+
             },
 
     deleteUserQuestion: async (question_id) => {

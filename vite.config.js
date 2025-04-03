@@ -14,7 +14,7 @@ export default defineConfig({
   },
   resolve: {
     fallback: {
-      default: 'index.html' // Ensures routing fallback
+      default: 'index.html' 
     }
   }
 

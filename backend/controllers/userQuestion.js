@@ -22,7 +22,7 @@ const UserQuestion = {
           const userQuestion = await UserQuestionModel.getUserQuestion();
           res.status(200).json(userQuestion)
        }catch (error) {
-         res.status(500).json({ error: "can not serve your request sorry" });
+         res.status(500).json({ error: "can not serve your request sorry check your browser setting or try again later /@addo" });
        }
       
     },

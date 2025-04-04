@@ -5,7 +5,7 @@ import bodyParser from 'body-parser';
 import dotenv from 'dotenv';
 import cors from 'cors';
 import router from './routes/routes.js';
-import db from '../config/db.js'
+import db from './config/db.js'
 
 dotenv.config();
 const app = express();

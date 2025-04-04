@@ -21,6 +21,11 @@ app.options('*', cors());
 app.use(bodyParser.json());
 app.use('/api', router);
 
+app.get('render' , (req , res) => {
+
+    res.send("wellcome render")
+
+})
 app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);
 });

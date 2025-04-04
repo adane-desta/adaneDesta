@@ -21,7 +21,7 @@ app.options('*', cors());
 app.use(bodyParser.json());
 app.use('/api', router);
 
-app.get('render' , (req , res) => {
+app.get('/render' , (req , res) => {
 
     res.send("wellcome render")
 

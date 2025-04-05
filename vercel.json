@@ -3,4 +3,5 @@
     "rewrites": [
       { "source": "/(.*)", "destination": "/" }
     ]
+    
   }

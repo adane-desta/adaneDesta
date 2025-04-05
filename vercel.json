@@ -19,8 +19,31 @@
         "dest": "/assets/$1"
       },
       {
+        "src": "/html-files/(.*)",
+        "dest": "/html-files/$1"
+      },
+      {
+        "src": "/stylesheet_files/(.*)",
+        "dest": "/stylesheet_files/$1"
+      },
+      {
+        "src": "/javascript_files/(.*)",
+        "dest": "/javascript_files/$1"
+      },
+      {
         "src": "/(.*)",
-        "dest": "/index.html"
+        "dest": "/index.html",
+        "status": 200
+      }
+    ],
+    "rewrites": [
+      {
+        "source": "/login",
+        "destination": "/html-files/loginpage.html"
+      },
+      {
+        "source": "/join-us",
+        "destination": "/html-files/join-us.html"
       }
     ]
   }

@@ -1,14 +1,9 @@
-
 {
     "rewrites": [
-      { "source": "/(.*)", "destination": "/" }
-    ],
-
-    
-        "build": {
-          "outputDirectory": "dist"
-        }
-      
-      
-
+      {
+        "source": "/dist",
+        "destination": "/dist"
+      }
+    ]
   }
+  

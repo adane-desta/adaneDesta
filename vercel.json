@@ -13,10 +13,8 @@
     "rewrites": [
       {
         "source": "/assets/(.*)",
-        "destination": "/assets/$1",
-        "headers": {
-          "Cache-Control": "public, max-age=31536000, immutable"
-        }
+        "destination": "/assets/$1"
+
       },
       {
         "source": "/stylesheet_files/(.*)",

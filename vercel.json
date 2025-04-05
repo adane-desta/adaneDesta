@@ -10,33 +10,22 @@
         }
       }
     ],
-    "routes": [
+    "rewrites": [
       {
-        "src": "/assets/(.*)",
+        "source": "/assets/(.*)",
+        "destination": "/assets/$1",
         "headers": {
           "Cache-Control": "public, max-age=31536000, immutable"
-        },
-        "dest": "/assets/$1"
+        }
       },
       {
-        "src": "/html-files/(.*)",
-        "dest": "/html-files/$1"
+        "source": "/stylesheet_files/(.*)",
+        "destination": "/stylesheet_files/$1"
       },
       {
-        "src": "/stylesheet_files/(.*)",
-        "dest": "/stylesheet_files/$1"
+        "source": "/javascript_files/(.*)",
+        "destination": "/javascript_files/$1"
       },
-      {
-        "src": "/javascript_files/(.*)",
-        "dest": "/javascript_files/$1"
-      },
-      {
-        "src": "/(.*)",
-        "dest": "/index.html",
-        "status": 200
-      }
-    ],
-    "rewrites": [
       {
         "source": "/login",
         "destination": "/html-files/loginpage.html"
@@ -44,6 +33,12 @@
       {
         "source": "/join-us",
         "destination": "/html-files/join-us.html"
+      },
+      {
+        "source": "/(.*)",
+        "destination": "/index.html"
       }
-    ]
+    ],
+    
+    "trailingSlash": false
   }
